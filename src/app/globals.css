@@ -87,20 +87,20 @@
 
   .dark {
     --color-background: hsl(0, 0%, 4%);
-    --color-foreground: hsl(210 40% 98%);
+    --color-foreground: #eeeeee;
 
     --color-card: hsl(222.2 84% 4.9%);
     --color-card-foreground: hsl(210 40% 98%);
     --color-popover: hsl(222.2 84% 4.9%);
     --color-popover-foreground: hsl(210 40% 98%);
 
-    --color-primary: hsl(210 40% 98%);
+    --color-primary: rgb(248, 250, 252);
     --color-primary-foreground: hsl(222.2 47.4% 11.2%);
 
     --color-secondary: hsl(217.2 32.6% 17.5%);
     --color-secondary-foreground: hsl(210 40% 98%);
     --color-muted: hsl(217.2 32.6% 17.5%);
-    --color-muted-foreground: hsl(215 20.2% 65.1%);
+    --color-muted-foreground: #9c9c9c;
 
     --color-accent: hsl(217.2 32.6% 17.5%);
     --color-accent-foreground: hsl(210 40% 98%);
