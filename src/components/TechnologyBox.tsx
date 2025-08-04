@@ -7,9 +7,9 @@ export function TechnologyBox({ name, icon }: TechnologyProps) {
   });
 
   return (
-    <div className="border rounded-lg flex flex-col items-center text-card-foreground shadow-sm p-4 bg-card/30">
+    <div className="border rounded-lg flex flex-col items-center text-card-foreground shadow-sm px-4 py-3 ">
       {iconWithClasses}
-      <h1 className="font-medium">{name}</h1>
+      <h1 className="text-sm">{name}</h1>
     </div>
   );
 }

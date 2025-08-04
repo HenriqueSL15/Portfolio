@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ContactInfo } from "./ContactInfo";
 
 export function AboutMe() {
   return (
@@ -30,6 +31,8 @@ export function AboutMe() {
         Especializado na criação de experiências de usuário envolventes com
         grande atenção aos detalhes.
       </p>
+
+      <ContactInfo />
     </div>
   );
 }

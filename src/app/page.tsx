@@ -7,6 +7,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col gap-20 items-center w-full ">
       <Header />
       <AboutMe />
+
       <Technologies />
     </div>
   );
