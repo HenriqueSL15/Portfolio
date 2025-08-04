@@ -16,7 +16,7 @@ export function AboutMe() {
         </div>
 
         {/* Introdução */}
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1">
           <h1 className="text-2xl w-auto font-semibold">
             Opa, sou o Henrique! <span>👋</span>
           </h1>
