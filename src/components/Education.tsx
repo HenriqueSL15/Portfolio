@@ -1,7 +1,8 @@
+import EducationProps from "@/types/Education";
 import { EducationBox } from "./EducationBox";
 
 export function Education() {
-  const educationInfo = [
+  const educationInfo: EducationProps[] = [
     {
       title: "Universidade de Brasília (UnB)",
       description: "Bacharelado em Engenharia de Software",
@@ -18,9 +19,9 @@ export function Education() {
 
   return (
     <div className="min-w-1/3 max-w-1/3 flex flex-col items-center">
-      <h1 className="text-2xl font-semibold mb-5">Educação</h1>
+      <h1 className="text-2xl font-semibold mb-5 font-montserrat">Educação</h1>
       <div className="flex flex-col gap-3">
-        {educationInfo.map((education, i) => {
+        {educationInfo.map((education: EducationProps, i: number) => {
           return <EducationBox key={i} {...education} />;
         })}
       </div>

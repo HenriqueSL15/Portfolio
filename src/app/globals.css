@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap");
+
 @variant dark (&:where(.dark, .dark *));
 
 @theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+
   --color-background: hsl(0 0% 0%);
   --color-foreground: hsl(0 0% 98%);
 

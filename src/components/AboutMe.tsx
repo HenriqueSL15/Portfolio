@@ -18,15 +18,17 @@ export function AboutMe() {
 
         {/* Introdução */}
         <div className="flex flex-col gap-1">
-          <h1 className="text-2xl w-auto font-semibold">
+          <h1 className="text-2xl w-auto font-semibold font-montserrat">
             Opa, sou o Henrique! <span>👋</span>
           </h1>
-          <h2 className="text-green-400">✓ Disponível para trabalho</h2>
+          <h2 className="text-green-400 font-roboto">
+            ✓ Disponível para trabalho
+          </h2>
         </div>
       </div>
 
       {/* Sobre Mim */}
-      <p className="text-foreground">
+      <p className="text-foreground font-roboto">
         Sou um desenvolvedor fullstack criativo com 2+ anos de experiência.
         Especializado na criação de experiências de usuário envolventes com
         grande atenção aos detalhes.

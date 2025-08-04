@@ -9,7 +9,7 @@ export function ContactBox({ name, icon }: ContactProps) {
   return (
     <button className="flex gap-3 items-center justify-center border py-2 rounded-lg">
       {iconWithClasses}
-      <h1>{name}</h1>
+      <h1 className="font-montserrat">{name}</h1>
     </button>
   );
 }

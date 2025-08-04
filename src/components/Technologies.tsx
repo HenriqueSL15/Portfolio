@@ -50,7 +50,9 @@ export function Technologies() {
 
   return (
     <div className="flex flex-col min-w-1/3 max-w-1/3">
-      <h1 className="text-center font-semibold text-2xl mb-5">Tecnologias</h1>
+      <h1 className="text-center font-semibold text-2xl mb-5 font-montserrat">
+        Tecnologias
+      </h1>
       <div className="grid grid-cols-4 w-full gap-2">
         {technologies.map((technology: TechnologyProps, i: number) => {
           return (
