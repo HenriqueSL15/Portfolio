@@ -8,18 +8,22 @@ export function ContactInfo() {
     {
       name: "Currículo",
       icon: <FaFileLines />,
+      link: "/curriculo.pdf",
     },
     {
       name: "GitHub",
       icon: <FaGithub />,
+      link: "https://github.com/HenriqueSL15",
     },
     {
       name: "LinkedIn",
       icon: <FaLinkedin />,
+      link: "https://www.linkedin.com/in/henrique-s-82b58736b",
     },
     {
       name: "Email",
       icon: <MdEmail />,
+      link: "mailto:henrynyyls@gmail.com",
     },
   ];
 
