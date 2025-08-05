@@ -13,6 +13,16 @@ export function Projects() {
       githubLink:
         "https://github.com/HenriqueSL15/FinTrack-Site-de-analise-financeira",
     },
+    {
+      imageUrl: "/byteland_preview.png",
+      imageAlt: "Prévia do Projeto ByteLand",
+      title: "ByteLand",
+      description:
+        "Rede Social onde é possível fazer publicações, comentar nas mesmas, ter a sua própria página com suas publicações além de fazer amigos.",
+      techStack: ["React.js", "Node.js", "MongoDB", "TailwindCSS"],
+      demoLink: "https://byte-land.netlify.app/",
+      githubLink: "https://github.com/HenriqueSL15/Byte-Land-Rede-social",
+    },
   ];
 
   return (
@@ -20,9 +30,11 @@ export function Projects() {
       <h1 className=" text-2xl font-semibold mb-5 font-montserrat text-center">
         Projetos
       </h1>
-      {projectsInfo.map((project, i: number) => (
-        <ProjectBox key={i} {...project} />
-      ))}
+      <div className="flex flex-col gap-3">
+        {projectsInfo.map((project, i: number) => (
+          <ProjectBox key={i} {...project} />
+        ))}
+      </div>
     </div>
   );
 }
