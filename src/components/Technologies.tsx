@@ -1,3 +1,5 @@
+"use client";
+
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import {
   SiTypescript,
@@ -14,35 +16,43 @@ export function Technologies() {
   const technologies: TechnologyProps[] = [
     {
       name: "HTML 5",
-      icon: <FaHtml5 />,
+      icon: FaHtml5,
+      color: "#f06529",
     },
     {
       name: "CSS",
-      icon: <FaCss3Alt />,
+      icon: FaCss3Alt,
+      color: "#2965f1",
     },
     {
       name: "Typescript",
-      icon: <SiTypescript />,
+      icon: SiTypescript,
+      color: "#007acc",
     },
     {
       name: "React.js",
-      icon: <FaReact />,
+      icon: FaReact,
+      color: "#00d8ff",
     },
     {
       name: "Next.js",
-      icon: <SiNextdotjs />,
+      icon: SiNextdotjs,
+      color: "white",
     },
     {
       name: "Tailwind CSS",
-      icon: <SiTailwindcss />,
+      icon: SiTailwindcss,
+      color: "#38bdf8",
     },
     {
       name: "MongoDB",
-      icon: <SiMongodb />,
+      icon: SiMongodb,
+      color: "#4da84b",
     },
     {
       name: "PostgreeSQL",
-      icon: <SiPostgresql />,
+      icon: SiPostgresql,
+      color: "#007acc",
     },
   ];
 
@@ -58,6 +68,7 @@ export function Technologies() {
               key={i}
               name={technology.name}
               icon={technology.icon}
+              color={technology.color}
             />
           );
         })}

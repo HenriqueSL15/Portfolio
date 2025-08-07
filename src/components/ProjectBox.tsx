@@ -3,6 +3,7 @@
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import ProjectProps from "@/types/Project";
+import { motion } from "framer-motion";
 
 export function ProjectBox({
   imageUrl,
@@ -13,16 +14,34 @@ export function ProjectBox({
   demoLink,
   githubLink,
 }: ProjectProps) {
+  const imageVariants = {
+    hover: {
+      scale: 1.03,
+    },
+  };
+
+  const buttonVariants = {
+    hover: {
+      scale: 1.05,
+    },
+  };
+
   return (
     <div className="w-full border rounded-lg flex flex-col gap-5 p-5">
-      <Image
-        onClick={() => window.open(demoLink, "_blank")}
-        className="rounded-lg cursor-pointer"
-        src={imageUrl}
-        width={1920}
-        height={1080}
-        alt={imageAlt}
-      />
+      <motion.div
+        variants={imageVariants}
+        whileHover={"hover"}
+        transition={{ duration: 0.2, ease: "easeInOut" }}
+      >
+        <Image
+          onClick={() => window.open(demoLink, "_blank")}
+          className="rounded-lg cursor-pointer"
+          src={imageUrl}
+          width={1920}
+          height={1080}
+          alt={imageAlt}
+        />
+      </motion.div>
       <div className="flex flex-col gap-1">
         <h1 className="font-montserrat font-bold text-2xl text-foreground">
           {title}
@@ -40,20 +59,24 @@ export function ProjectBox({
         ))}
       </div>
       <div className="flex gap-3">
-        <button
+        <motion.button
+          variants={buttonVariants}
+          whileHover={"hover"}
           className="flex items-center gap-2 font-semibold cursor-pointer border p-2 rounded-lg bg-black"
           onClick={() => window.open(demoLink, "_blank")}
         >
           <FaExternalLinkAlt />
           Demo
-        </button>
-        <button
+        </motion.button>
+        <motion.button
+          variants={buttonVariants}
+          whileHover={"hover"}
           className="flex items-center gap-2 font-semibold cursor-pointer border p-2 rounded-lg bg-black"
           onClick={() => window.open(githubLink, "_blank")}
         >
           <FaGithub />
           Código
-        </button>
+        </motion.button>
       </div>
     </div>
   );
