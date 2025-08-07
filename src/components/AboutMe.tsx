@@ -5,7 +5,6 @@ import { AboutMeImage } from "./AboutMeImage";
 import { useState } from "react";
 
 import { motion, easeInOut } from "framer-motion";
-import React from "react";
 
 export function AboutMe() {
   const [hovered, setHovered] = useState(false);
@@ -25,10 +24,6 @@ export function AboutMe() {
       },
     },
   };
-
-  React.useEffect(() => {
-    console.log(hovered);
-  }, [hovered]);
 
   return (
     <div className="min-w-1/3 max-w-1/3 flex flex-col gap-7">
@@ -58,7 +53,7 @@ export function AboutMe() {
       {/* Sobre Mim */}
       <p className="text-foreground font-roboto">
         Sou um{" "}
-        <div className="inline-block">
+        <span className="inline-block">
           <motion.span
             initial={false}
             animate={{
@@ -68,15 +63,15 @@ export function AboutMe() {
           >
             desenvolvedor fullstack criativo
           </motion.span>
-          <motion.div
+          <motion.span
             initial={false}
             animate={{ scaleX: hovered ? 1 : 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
             className="origin-left h-[2px] bg-green-400 w-full"
           />
-        </div>{" "}
+        </span>{" "}
         com{" "}
-        <div className="inline-block">
+        <span className="inline-block">
           <motion.span
             initial={false}
             animate={{
@@ -86,15 +81,15 @@ export function AboutMe() {
           >
             2 anos de experiência.
           </motion.span>
-          <motion.div
+          <motion.span
             initial={false}
             animate={{ scaleX: hovered ? 1 : 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
             className="origin-left h-[2px] bg-green-400 w-full"
           />
-        </div>{" "}
+        </span>{" "}
         Especializado na{" "}
-        <div className="inline-block">
+        <span className="inline-block">
           <motion.span
             initial={false}
             animate={{
@@ -104,15 +99,15 @@ export function AboutMe() {
           >
             criação de experiências de usuário envolventes
           </motion.span>
-          <motion.div
+          <motion.span
             initial={false}
             animate={{ scaleX: hovered ? 1 : 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
             className="origin-left h-[2px] bg-green-400 w-full"
           />
-        </div>{" "}
+        </span>{" "}
         com{" "}
-        <div className="inline-block">
+        <span className="inline-block">
           <motion.span
             initial={false}
             animate={{
@@ -122,13 +117,13 @@ export function AboutMe() {
           >
             grande atenção aos detalhes.
           </motion.span>
-          <motion.div
+          <motion.span
             initial={false}
             animate={{ scaleX: hovered ? 1 : 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
             className="origin-left h-[2px] bg-green-400 w-full"
           />
-        </div>
+        </span>
       </p>
 
       <ContactInfo />

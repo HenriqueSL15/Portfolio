@@ -52,6 +52,15 @@ export function AboutMeImage({ setHovered, hovered }) {
         className="absolute top-0 left-0 w-full h-full"
         viewBox="0 0 140 140"
       >
+        {/* Borda cinza estática */}
+        <circle
+          cx="70"
+          cy="70"
+          r={radius}
+          fill="transparent"
+          stroke="#555"
+          strokeWidth={strokeWidth}
+        />
         <motion.circle
           cx="70"
           cy="70"
