@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export function ContactBox({ name, icon, link }: ContactProps) {
   const iconWithClasses = React.cloneElement(icon, {
-    className: "",
+    className: "text-primary",
   });
 
   return (
@@ -15,10 +15,10 @@ export function ContactBox({ name, icon, link }: ContactProps) {
       href={link}
       target={link !== "mailto:henrynyyls@gmail.com" && link ? "_blank" : ""}
       download={link.startsWith("/") ? true : false}
-      className="flex gap-1 items-center justify-center border py-2 rounded-lg"
+      className="flex gap-1 items-center justify-center border border-border py-2 rounded-lg"
     >
       {iconWithClasses}
-      <h1 className="font-montserrat">{name}</h1>
+      <h1 className="font-montserrat text-primary">{name}</h1>
     </motion.a>
   );
 }

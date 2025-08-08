@@ -3,21 +3,23 @@
 import TechnologyProps from "@/types/Technology";
 import React from "react";
 import { motion } from "framer-motion";
+import { useTheme } from "@/contexts/ThemeContext";
 
 export function TechnologyBox({ name, icon, color }: TechnologyProps) {
   const Icon = icon;
+  const { isDark } = useTheme();
 
   const boxVariant = {
     hover: {
       scale: 1.05,
-      backgroundColor: "#151515",
+      backgroundColor: isDark ? "var(--color-techCard-background)" : "",
     },
   };
 
   const iconVariants = {
     hover: {
       y: -5,
-      color: color,
+      color: color !== "#fafafa" ? color : isDark ? "white" : "black",
     },
   };
 
@@ -25,12 +27,13 @@ export function TechnologyBox({ name, icon, color }: TechnologyProps) {
     <motion.div
       variants={boxVariant}
       whileHover="hover"
-      transition={{ duration: 0.1, ease: "easeInOut" }}
-      className="border rounded-lg flex flex-col items-center text-card-foreground shadow-sm px-4 py-3 cursor-pointer"
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+      className="border border-border rounded-lg flex flex-col items-center shadow-sm px-4 py-3 cursor-pointer "
     >
       <motion.div
         variants={iconVariants}
-        transition={{ duration: 0.1, ease: "easeInOut" }}
+        initial={{ color: "var(--color-primary)" }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         <Icon className="text-3xl mb-1" />
       </motion.div>

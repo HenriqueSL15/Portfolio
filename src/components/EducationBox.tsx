@@ -27,12 +27,16 @@ export function EducationBox({
       variants={boxVariant}
       whileHover="hover"
       transition={{ duration: 0.1, ease: "easeInOut" }}
-      className="w-full border flex p-5 rounded-lg gap-5 cursor-pointer"
+      className="w-full border border-border flex p-5 rounded-lg gap-5 cursor-pointer"
     >
-      <SlGraduation className="bg-portfolio-subtle p-2 rounded-xl" size={50} />
+      <SlGraduation
+        className="bg-portfolio-subtle p-2 rounded-xl"
+        size={50}
+        color="var(--color-primary)"
+      />
 
       <div className="flex flex-col w-full">
-        <h1 className="font-semibold font-montserrat">{title}</h1>
+        <h1 className="font-semibold font-montserrat text-primary">{title}</h1>
         <p className="text-muted-foreground font-roboto">{description}</p>
         <div className="mt-3 w-full flex justify-between items-center">
           <p className="text-sm text-muted-foreground font-roboto">

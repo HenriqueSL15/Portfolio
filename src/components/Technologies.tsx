@@ -37,7 +37,7 @@ export function Technologies() {
     {
       name: "Next.js",
       icon: SiNextdotjs,
-      color: "white",
+      color: "#fafafa",
     },
     {
       name: "Tailwind CSS",
@@ -58,7 +58,7 @@ export function Technologies() {
 
   return (
     <div className="flex flex-col min-w-1/3 max-w-1/3">
-      <h1 className="text-center font-semibold text-2xl mb-5 font-montserrat">
+      <h1 className="text-center font-semibold text-2xl mb-5 font-montserrat text-primary">
         Tecnologias
       </h1>
       <div className="grid grid-cols-4 w-full gap-2">

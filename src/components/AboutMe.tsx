@@ -3,7 +3,6 @@
 import { ContactInfo } from "./ContactInfo";
 import { AboutMeImage } from "./AboutMeImage";
 import { useState } from "react";
-
 import { motion, easeInOut } from "framer-motion";
 
 export function AboutMe() {
@@ -31,12 +30,11 @@ export function AboutMe() {
         <AboutMeImage hovered={hovered} setHovered={setHovered} />
         {/* Introdução */}
         <div className="flex flex-col gap-1">
-          <h1 className="text-2xl w-auto font-semibold font-montserrat">
+          <h1 className="text-2xl w-auto font-semibold font-montserrat text-primary">
             Opa, sou o Henrique!{" "}
             <motion.span
               variants={emojiVariants}
               initial="rest"
-              // animate="rest"
               whileHover="hover"
               transition={{ duration: 2, ease: "easeInOut" }}
               className="inline-block"
@@ -44,20 +42,20 @@ export function AboutMe() {
               👋
             </motion.span>
           </h1>
-          <h2 className="text-green-400 font-roboto">
+          <h2 className="text-[#05df72] font-roboto">
             ✓ Disponível para trabalho
           </h2>
         </div>
       </div>
 
       {/* Sobre Mim */}
-      <p className="text-foreground font-roboto">
+      <p className="text-primary font-roboto">
         Sou um{" "}
-        <span className="inline-block">
+        <span className="inline-block relative">
           <motion.span
             initial={false}
             animate={{
-              color: hovered ? "#05df72" : "white",
+              color: hovered ? "var(--color-greenText)" : "inherit",
             }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
@@ -67,15 +65,16 @@ export function AboutMe() {
             initial={false}
             animate={{ scaleX: hovered ? 1 : 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="origin-left h-[2px] bg-green-400 w-full"
+            className="absolute bottom-0 left-0 h-[2px] bg-greenText w-full"
+            style={{ transformOrigin: "left" }}
           />
         </span>{" "}
         com{" "}
-        <span className="inline-block">
+        <span className="inline-block relative">
           <motion.span
             initial={false}
             animate={{
-              color: hovered ? "#05df72" : "white",
+              color: hovered ? "var(--color-greenText)" : "inherit",
             }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
@@ -85,33 +84,37 @@ export function AboutMe() {
             initial={false}
             animate={{ scaleX: hovered ? 1 : 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="origin-left h-[2px] bg-green-400 w-full"
+            className="absolute bottom-0 left-0 h-[2px] bg-greenText w-full"
+            style={{ transformOrigin: "left" }}
           />
         </span>{" "}
         Especializado na{" "}
-        <span className="inline-block">
+        <span className="inline-block relative">
           <motion.span
             initial={false}
             animate={{
-              color: hovered ? "#05df72" : "white",
+              color: hovered ? "var(--color-greenText)" : "inherit",
             }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
             criação de experiências de usuário envolventes
           </motion.span>
+
           <motion.span
             initial={false}
             animate={{ scaleX: hovered ? 1 : 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="origin-left h-[2px] bg-green-400 w-full"
+            className="absolute bottom-0 left-0 h-[2px] bg-greenText w-full"
+            style={{ transformOrigin: "left" }}
           />
         </span>{" "}
         com{" "}
-        <span className="inline-block">
+        <span className="inline-block relative">
           <motion.span
             initial={false}
             animate={{
-              color: hovered ? "#05df72" : "white",
+              color: hovered ? "var(--color-greenText)" : "inherit",
+              // color: hovered ? "#05df72" : "inherit",
             }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
@@ -121,7 +124,8 @@ export function AboutMe() {
             initial={false}
             animate={{ scaleX: hovered ? 1 : 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="origin-left h-[2px] bg-green-400 w-full"
+            className="absolute bottom-0 left-0 h-[2px] bg-greenText w-full"
+            style={{ transformOrigin: "left" }}
           />
         </span>
       </p>

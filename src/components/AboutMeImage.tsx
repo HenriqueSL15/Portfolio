@@ -66,7 +66,7 @@ export function AboutMeImage({ setHovered, hovered }) {
           cy="70"
           r={radius}
           fill="transparent"
-          stroke="#00FF88"
+          stroke="#05df72"
           strokeWidth={strokeWidth}
           strokeDasharray={circumference}
           strokeDashoffset={circumference}

@@ -27,7 +27,7 @@ export function Projects() {
 
   return (
     <div className="min-w-1/3 max-w-1/3">
-      <h1 className=" text-2xl font-semibold mb-5 font-montserrat text-center">
+      <h1 className=" text-2xl font-semibold mb-5 font-montserrat text-center text-primary">
         Projetos
       </h1>
       <div className="flex flex-col gap-3">

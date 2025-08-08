@@ -27,7 +27,7 @@ export function ProjectBox({
   };
 
   return (
-    <div className="w-full border rounded-lg flex flex-col gap-5 p-5">
+    <div className="w-full border border-border rounded-lg flex flex-col gap-5 p-5">
       <motion.div
         variants={imageVariants}
         whileHover={"hover"}
@@ -43,7 +43,7 @@ export function ProjectBox({
         />
       </motion.div>
       <div className="flex flex-col gap-1">
-        <h1 className="font-montserrat font-bold text-2xl text-foreground">
+        <h1 className="font-montserrat font-bold text-2xl text-primary">
           {title}
         </h1>
         <p className="font-roboto text-muted-foreground">{description}</p>
@@ -62,7 +62,7 @@ export function ProjectBox({
         <motion.button
           variants={buttonVariants}
           whileHover={"hover"}
-          className="flex items-center gap-2 font-semibold cursor-pointer border p-2 rounded-lg bg-black"
+          className="flex items-center gap-2 font-semibold cursor-pointer border border-border p-2 rounded-lg  text-primary"
           onClick={() => window.open(demoLink, "_blank")}
         >
           <FaExternalLinkAlt />
@@ -71,7 +71,7 @@ export function ProjectBox({
         <motion.button
           variants={buttonVariants}
           whileHover={"hover"}
-          className="flex items-center gap-2 font-semibold cursor-pointer border p-2 rounded-lg bg-black"
+          className="flex items-center gap-2 font-semibold cursor-pointer border border-border p-2 rounded-lg  text-primary"
           onClick={() => window.open(githubLink, "_blank")}
         >
           <FaGithub />
