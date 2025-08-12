@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio - Portfólio Pessoal de Desenvolvimento Full-Stack
 
-## Getting Started
+Este projeto é meu portfólio pessoal, desenvolvido para apresentar minhas habilidades, projetos e experiência como desenvolvedor full-stack de forma clara, moderna e interativa.
 
-First, run the development server:
+## 📸 Demonstração
+Você pode acessar meu portfólio online [aqui](https://portfolio-theta-ten-joumah1lyf.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tecnologias Utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Frontend
+- **Next.js 15**: Framework React moderno com renderização híbrida e otimizações de performance
+- **React 19**: Biblioteca para construção de interfaces de usuário reativas
+- **TypeScript 5**: Tipagem estática para maior segurança e qualidade do código
+- **TailwindCSS 4**: Framework CSS utilitário para estilização rápida e responsiva
+- **Framer Motion**: Biblioteca para animações e transições suaves
+- **React Icons**: Conjunto de ícones para enriquecer a interface visualmente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Funcionalidades
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Design Responsivo**: Layout adaptado para dispositivos desktop, tablet e mobile
+- **Tema Claro/Escuro**: Alternância entre temas com persistência da preferência do usuário
+- **Animações Suaves**: Uso de Framer Motion para transições e efeitos visuais
+- **Seções Completas**: Sobre mim, Projetos, Tecnologias, Educação e Contato
+- **Navegação Intuitiva**: Menu fixo com scroll suave para as seções da página
+- **Otimização de Performance**: Imagens otimizadas e carregamento eficiente
 
-## Learn More
+## 📂 Estrutura do Projeto
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **src/app**: Contém as páginas e rotas do Next.js
+- **src/components**: Componentes React reutilizáveis para as seções do portfólio
+- **public**: Arquivos estáticos como imagens e documentos
+- **styles**: Configurações globais de CSS e Tailwind
