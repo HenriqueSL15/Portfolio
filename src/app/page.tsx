@@ -6,8 +6,6 @@ import { Technologies } from "@/components/Technologies";
 import { Education } from "@/components/Education";
 import { Projects } from "@/components/Projects";
 
-import { useTheme } from "@/contexts/ThemeContext";
-// bg-[linear-gradient(to_bottom,_#101b15_0%,_#0a0a0a_25%)]
 export default function Home() {
   return (
     <div

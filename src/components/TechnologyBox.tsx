@@ -28,7 +28,7 @@ export function TechnologyBox({ name, icon, color }: TechnologyProps) {
       variants={boxVariant}
       whileHover="hover"
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="border border-border rounded-lg flex flex-col items-center shadow-sm px-4 py-3 cursor-pointer "
+      className="border border-border rounded-lg flex flex-col items-center shadow-sm px-4 py-3"
     >
       <motion.div
         variants={iconVariants}

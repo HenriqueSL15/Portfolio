@@ -42,8 +42,9 @@ export function AboutMe() {
               👋
             </motion.span>
           </h1>
-          <h2 className="text-[#05df72] font-roboto">
-            ✓ Disponível para trabalho
+          <h2 className="text-primary font-roboto">
+            <span className="text-[#05df72] text-xl">✓</span> Disponível para
+            trabalho
           </h2>
         </div>
       </div>
@@ -51,80 +52,49 @@ export function AboutMe() {
       {/* Sobre Mim */}
       <p className="text-primary font-roboto">
         Sou um{" "}
-        <span className="inline-block relative">
-          <motion.span
-            initial={false}
-            animate={{
-              color: hovered ? "var(--color-greenText)" : "inherit",
-            }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-          >
+        <span className="inline-block relative ">
+          <span className="relative z-10">
             desenvolvedor fullstack criativo
-          </motion.span>
+          </span>
           <motion.span
             initial={false}
             animate={{ scaleX: hovered ? 1 : 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="absolute bottom-0 left-0 h-[2px] bg-greenText w-full"
+            className="absolute bottom-1 left-0 h-[20px] bg-aboutMeBackground w-full"
             style={{ transformOrigin: "left" }}
           />
         </span>{" "}
         com{" "}
         <span className="inline-block relative">
-          <motion.span
-            initial={false}
-            animate={{
-              color: hovered ? "var(--color-greenText)" : "inherit",
-            }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-          >
-            2 anos de experiência.
-          </motion.span>
+          <span className="relative z-10">2 anos de experiência.</span>
           <motion.span
             initial={false}
             animate={{ scaleX: hovered ? 1 : 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="absolute bottom-0 left-0 h-[2px] bg-greenText w-full"
+            className="absolute bottom-1 left-0 h-[20px] bg-aboutMeBackground w-full"
             style={{ transformOrigin: "left" }}
           />
         </span>{" "}
-        Especializado na{" "}
+        Especializado em{" "}
         <span className="inline-block relative">
-          <motion.span
-            initial={false}
-            animate={{
-              color: hovered ? "var(--color-greenText)" : "inherit",
-            }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-          >
-            criação de experiências de usuário envolventes
-          </motion.span>
+          <span className="relative z-10">desenvolvimento web full-stack</span>
 
           <motion.span
             initial={false}
             animate={{ scaleX: hovered ? 1 : 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="absolute bottom-0 left-0 h-[2px] bg-greenText w-full"
+            className="absolute bottom-1 left-0 h-[20px] bg-aboutMeBackground w-full"
             style={{ transformOrigin: "left" }}
           />
         </span>{" "}
         com{" "}
         <span className="inline-block relative">
-          <motion.span
-            initial={false}
-            animate={{
-              color: hovered ? "var(--color-greenText)" : "inherit",
-              // color: hovered ? "#05df72" : "inherit",
-            }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-          >
-            grande atenção aos detalhes.
-          </motion.span>
+          <span className="relative z-10">grande atenção aos detalhes.</span>
           <motion.span
             initial={false}
             animate={{ scaleX: hovered ? 1 : 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="absolute bottom-0 left-0 h-[2px] bg-greenText w-full"
+            className="absolute bottom-1 left-0 h-[20px] bg-aboutMeBackground w-full"
             style={{ transformOrigin: "left" }}
           />
         </span>

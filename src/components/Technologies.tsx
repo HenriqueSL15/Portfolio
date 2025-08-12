@@ -11,8 +11,12 @@ import {
 
 import { TechnologyBox } from "./TechnologyBox";
 import TechnologyProps from "@/types/Technology";
+import { CustomCursor } from "./CustomCursor";
+import { useState } from "react";
 
 export function Technologies() {
+  const [hovering, setHovering] = useState(false);
+
   const technologies: TechnologyProps[] = [
     {
       name: "HTML 5",
@@ -61,7 +65,11 @@ export function Technologies() {
       <h1 className="text-center font-semibold text-2xl mb-5 font-montserrat text-primary">
         Tecnologias
       </h1>
-      <div className="grid grid-cols-4 w-full gap-2">
+      <div
+        className="grid grid-cols-4 w-full gap-2 cursor-none"
+        onMouseEnter={() => setHovering(true)}
+        onMouseLeave={() => setHovering(false)}
+      >
         {technologies.map((technology: TechnologyProps, i: number) => {
           return (
             <TechnologyBox
@@ -72,6 +80,9 @@ export function Technologies() {
             />
           );
         })}
+      </div>
+      <div className="absolute left-0 top-0">
+        ${hovering && <CustomCursor />}
       </div>
     </div>
   );

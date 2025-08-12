@@ -15,7 +15,8 @@
   --color-techCard-background: #f5f5f5;
   --color-portfolio-subtle: #e2e8f0;
   --color-techBoxHover: #f5f5f5;
-  --color-greenText: #fcba03;
+  --color-aboutMeText: #fafafa;
+  --color-aboutMeBackground: #fff085;
 }
 
 /* Tema escuro - sobrescreve as variáveis do tema claro */
@@ -31,7 +32,8 @@
   --color-portfolio-subtle: #334155;
   --color-foreground: #f8fafc;
   --color-techBoxHover: #151515;
-  --color-greenText: #05df72;
+  --color-aboutMeText: #fafafa;
+  --color-aboutMeBackground: #894b00;
 }
 
 /* Aplicar gradiente de fundo no tema escuro */

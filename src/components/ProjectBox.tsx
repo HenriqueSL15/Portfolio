@@ -27,7 +27,7 @@ export function ProjectBox({
   };
 
   return (
-    <div className="w-full border border-border rounded-lg flex flex-col gap-5 p-5">
+    <div className="w-full border border-border rounded-lg flex flex-col gap-5 p-5 ">
       <motion.div
         variants={imageVariants}
         whileHover={"hover"}
