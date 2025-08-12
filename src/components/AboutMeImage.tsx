@@ -4,7 +4,13 @@ import Image from "next/image";
 import { useAnimation, easeInOut, motion } from "framer-motion";
 import { useRef } from "react";
 
-export function AboutMeImage({ setHovered, hovered }) {
+export function AboutMeImage({
+  setHovered,
+  hovered,
+}: {
+  setHovered: React.Dispatch<React.SetStateAction<boolean>>;
+  hovered: boolean;
+}) {
   const controls = useAnimation();
   const isAnimating = useRef(false);
 
