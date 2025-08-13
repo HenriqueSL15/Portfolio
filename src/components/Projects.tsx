@@ -26,7 +26,7 @@ export function Projects() {
   ];
 
   return (
-    <div className="min-w-1/3 max-w-1/3">
+    <div className="xl:min-w-1/3 xl:max-w-1/3 lg:min-w-2/4 lg:max-w-2/4 sm:min-w-7/10 sm:max-w-7/10">
       <h1 className=" text-2xl font-semibold mb-5 font-montserrat text-center text-primary">
         Projetos
       </h1>

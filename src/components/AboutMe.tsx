@@ -25,7 +25,7 @@ export function AboutMe() {
   };
 
   return (
-    <div className="min-w-1/3 max-w-1/3 flex flex-col gap-7">
+    <div className="xl:min-w-1/3 xl:max-w-1/3 lg:min-w-2/4 lg:max-w-2/4 sm:min-w-7/10 sm:max-w-7/10  flex flex-col gap-7">
       <div className="flex gap-3 justify-start w-full">
         <AboutMeImage hovered={hovered} setHovered={setHovered} />
         {/* Introdução */}

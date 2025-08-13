@@ -18,8 +18,8 @@ export function Education() {
   ];
 
   return (
-    <div className="min-w-1/3 max-w-1/3 flex flex-col items-center">
-      <h1 className="text-2xl font-semibold mb-5 font-montserrat text-primary">
+    <div className="flex flex-col xl:min-w-1/3 xl:max-w-1/3 lg:min-w-2/4 lg:max-w-2/4 sm:min-w-7/10 sm:max-w-7/10">
+      <h1 className="text-2xl font-semibold mb-5 font-montserrat text-primary text-center">
         Educação
       </h1>
       <div className="flex flex-col gap-3">

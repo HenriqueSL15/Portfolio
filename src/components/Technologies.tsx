@@ -61,7 +61,7 @@ export function Technologies() {
   ];
 
   return (
-    <div className="flex flex-col min-w-1/3 max-w-1/3">
+    <div className="flex flex-col xl:min-w-1/3 xl:max-w-1/3 lg:min-w-2/4 lg:max-w-2/4 sm:min-w-7/10 sm:max-w-7/10">
       <h1 className="text-center font-semibold text-2xl mb-5 font-montserrat text-primary">
         Tecnologias
       </h1>
