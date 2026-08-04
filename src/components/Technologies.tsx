@@ -82,7 +82,7 @@ export function Technologies() {
         })}
       </div>
       <div className="absolute left-0 top-0">
-        ${hovering && <CustomCursor />}
+        {hovering && <CustomCursor />}
       </div>
     </div>
   );

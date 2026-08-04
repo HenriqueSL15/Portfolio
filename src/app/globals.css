@@ -12,7 +12,7 @@
   --color-secondary: #f1f5f9;
   --color-muted-foreground: #64748b;
   --color-border: #d4d4d4;
-  --color-techCard-background: #f5f5f5;
+  --color-techCard-background: #ededed;
   --color-portfolio-subtle: #e2e8f0;
   --color-techBoxHover: #f5f5f5;
   --color-aboutMeText: #fafafa;
@@ -38,9 +38,9 @@
 
 /* Aplicar gradiente de fundo no tema escuro */
 html {
-  background: linear-gradient(to bottom, #e2eefa 0%, #fafafa 35%);
+  background: linear-gradient(to bottom, #bad7f7 0%, #fafafa 50%);
 }
 
 html.dark {
-  background: linear-gradient(to bottom, #101b15 0%, #0a0a0a 35%);
+  background: linear-gradient(to bottom, #101b15 0%, #0a0a0a 50%);
 }

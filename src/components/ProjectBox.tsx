@@ -35,7 +35,7 @@ export function ProjectBox({
       >
         <Image
           onClick={() => window.open(demoLink, "_blank")}
-          className="rounded-lg cursor-pointer"
+          className="rounded-lg cursor-pointer border-1 border-gray-300"
           src={imageUrl}
           width={1920}
           height={1080}
@@ -52,7 +52,7 @@ export function ProjectBox({
         {techStack.map((tech: string, i: number) => (
           <h1
             key={i}
-            className="font-roboto bg-techCard-background text-foreground px-2 py-1 rounded-full"
+            className="font-roboto bg-techCard-background text-foreground px-2 py-1 rounded-full cursor-default"
           >
             {tech}
           </h1>

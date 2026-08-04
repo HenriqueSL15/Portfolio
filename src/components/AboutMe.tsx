@@ -37,7 +37,7 @@ export function AboutMe() {
               initial="rest"
               whileHover="hover"
               transition={{ duration: 2, ease: "easeInOut" }}
-              className="inline-block"
+              className="inline-block cursor-default"
             >
               👋
             </motion.span>
